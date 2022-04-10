@@ -1,91 +1,501 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <link href="/path/to/tailwind.css" rel="stylesheet">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
 </head>
+
 <body>
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl">Kamlesh Seervi</span>
-          </a>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href="home.html"class="mr-5 hover:text-gray-900">Home</a>
-            <a href="/"class="mr-5 hover:text-gray-900">About Me</a>
-            <a href="/"class="mr-5 hover:text-gray-900">Experience</a>
-            <a href="/"class="mr-5 hover:text-gray-900">Projects</a>
-            <a href="contact.html"class="mr-5 hover:text-gray-900">Contact</a>
-          </nav>
-          
-        </div>
-      </header>
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-                   
-          
-          <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-            <div class="flex flex-col mb-10 lg:items-start items-center">
-              <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
-              </div>
-              <div class="flex-grow">
-              <div class="text-center text-white subheadings-font text-4xl font-bold">About</div>
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Education</h2>
-                <p class="leading-relaxed text-base">Born on 2 September 2002 in a village Bhavi of Jodhur District in Rajasthan.
-                  Done Metric from Rani Devendra Kumari Public School In Bilara(nearest town). After that moved to Kota For IIT Jee Preperation And passed my Higher Secondary From Shiv Jyoti Sr. Sec. School But Failed to get into IIT And Got Indian Institute Of Information Technology MANIPUR By Jee Main              </p>
-                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="flex flex-col mb-10 lg:items-start items-center">
-              <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                  <circle cx="6" cy="6" r="3"></circle>
-                  <circle cx="6" cy="18" r="3"></circle>
-                  <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                </svg>
-              </div>
-              <div class="flex-grow">
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Experience</h2>
-                <p class="leading-relaxed text-base"> </p>
-                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="flex flex-col mb-10 lg:items-start items-center">
-              <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <div class="flex-grow">
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Projects</h2>
-                <p class="leading-relaxed text-base">updating soon</p>
-                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!--Header(start)-->
+    <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#FF6F61">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td>
+
+
+                        </td>
+
+                        <td>
+                            <font face="Comic sans MS" size="6">
+                                <b>Kamlesh Seervi
+                                </b>
+                            </font>
+                        </td>
+
+                        <td width="15%">
+
+                        </td>
+
+                        <td>
+                            <a href="#home" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=black>
+                                    Home
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td>
+                            <a href="#about" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=black>
+                                    About
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td>
+                            <a href="#projects" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=black>
+                                    Projects
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td>
+                            <a href="#achievements" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=black>
+                                    Achievements
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td>
+                            <a href="#contact" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=black>
+                                    Contact
+                                </font>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Header(end)-->
+
+    <!--Home(start)-->
+    <table id="home" border="1" width="100%" cellpadding="20" cellspacing="0" bgcolor="#6B5B95">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <h3>
+                                <font face="Times New Roman" size="6" color="#ffffff">
+                                    Hi
+                                </font>
+                            </h3>
+
+                            <h2>
+                                <font face="Verdana" size="6" color="#4CAF50">
+                                    <!-- Freelance Programmer -->
+                                </font>
+                            </h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Home(end)-->
+
+
+    <!--About(start)-->
+    <table id="about" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="BLACK">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="2">
+                            <font face="Verdana" size="7" color="#4CAF50">
+                                About Me
+                            </font>
+                            <hr color="#4CAF50" width="90">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="40%">
+                            <img src="kamlesh.JPG" width="100%">
+                        </td>
+
+                        <td width="60%">
+                            <font face="Verdana" size="4" color="white">
+                                Thanks for your interest, here is a quick story of me and this website.
+                                <hr color="black"> Kamlesh Seervi An IIIT Manipur Student
+                                <hr color="black"> I do my work mainly in C-Language, C++ And JAVA. Besides these I know Web Development, LINUX and database as well.
+                                <hr color="black"> This website is basically one of my Web Development project which is built using HTML only. Here one can also find ideas for projects in different languages. Thanks again for reading this, because of people like you, it
+                                exists and prospers!
+                                <hr color="black"> Cheers,
+                                <br>
+                                <b>Kamlesh Seervi</b>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+                <hr color="black">
+                <hr color="black">
+                <hr color="black">
+            </td>
+        </tr>
+    </table>
+    <!--About(end)-->
+
+
+    <!--Projects(start)-->
+    <table id="projects" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="2">
+                            <font face="Verdana" size="7" color="black">
+                                Projects
+                            </font>
+                            <hr color="black" width="90">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="10">
+                            <font face="Times New Roman" size="5" color="black">
+                                <ul>
+                                    <li>
+                                        Portfolio Website
+                                        <a href="https://kamleshseervi.github.io/" style="text-decoration:none">
+											 ➲
+										</a>
+                                    </li>
+
+                                </ul>
+                                <hr color="#c2c0c3">
+                                <hr color="#c2c0c3">
+                                <hr color="#c2c0c3">
+                                <hr color="#c2c0c3">
+                            </font>
+                        </td>
+
+                        <td width="45%">
+                            <img src="img.png" alt="Project" width="75%">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Projects(end)-->
+
+    <!--Achievement(start)-->
+    <table id="achievements" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center" valign="middle">
+                            <font face="Verdana" size="7" color="#4CAF50">
+                                Achievements
+                                <hr color="#4CAF50" width="100">
+                            </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font face="Verdana" size="4" color="white">
+                                <ul>
+                                    <li>
+                                        <b>3* Coder At Codechef.</b>
+
+                                    </li>
+
+                                    <li>
+                                        <hr color="black">
+                                        <hr color="black">
+                                        <hr color="black">
+                                        <b>Student Representative at Codechef</b>
+                                        <ul>
+                                            <li>
+                                                September 2021 - Nov 2021.
+                                            </li>
+                                            <li>
+                                                Get a chance to work with Marketing team of Codechef
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <hr color="black">
+                                        <hr color="black">
+                                        <hr color="black">
+                                        <b>Campus Ambassador at Ecell IIT Guwahati.</b>
+                                        <ul>
+                                            <li>
+                                                October 2021 - Jan 2022.
+                                            </li>
+
+                                            <hr color="black">
+                                            <hr color="black">
+                                            <hr color="black">
+                                            <hr color="black">
+                                            <hr color="black">
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Achievement(end)-->
+
+
+    <!--Contact(start)-->
+    <table id="contact" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="2">
+                            <font face="Verdana" size="7" color="black">
+                                Contact
+                            </font>
+                            <hr color="black" width="90">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top">
+                            <table border="0" width="50%" cellpadding="15" cellspacing="0" align="center" bgcolor="black">
+                                <tr>
+                                    <td width="30%">
+                                        <hr color="black">
+                                        <font face="Verdana" size="4" color="#ffffff">
+                                            Name
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4" color="#ffffff">
+                                            <input type="text" size="40">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4" color="#ffffff">
+                                            Email
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4" color="#ffffff">
+                                            <input type="email" size="40">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4" color="#ffffff">
+                                            Number
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4" color="#ffffff">
+                                            <input type="number" size="12">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4" color="#ffffff">
+                                            Message
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4" color="#ffffff">
+                                            <textarea rows="5" cols="37">
+											</textarea>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+
+                                    </td>
+                                    <td width="70%">
+                                        <button type="Submit">
+											<font face="Verdana"
+												size="4" color="black">
+												<b>Submit</b>
+											</font>
+										</button>
+                                        <hr color="black">
+                                        <hr color="black">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Contact(end)-->
+
+
+    <!--Footer1(start)-->
+    <table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td width="13%" valign="top">
+                            <b>LinkedIn</b>
+                            <a href="#" style="text-decoration:none">
+								➲
+							</a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td width="13%" valign="top">
+                            <b>GitHub</b>
+                            <a href="#" style="text-decoration:none">
+								➲
+							</a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td width="13%" valign="top">
+                            <b>HackerRank</b>
+                            <a href="#" style="text-decoration:none">
+								➲
+							</a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td width="13%" valign="top">
+                            <b>GeeksforGeeks</b>
+                            <a href="#" style="text-decoration:none">
+								➲
+							</a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td width="13%" valign="top">
+                            <b>Twitter</b>
+                            <a href="#" style="text-decoration:none">
+								➲
+							</a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td width="13%" valign="top">
+                            <b>Instagram</b>
+                            <a href="#" style="text-decoration:none">
+								➲
+							</a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td width="13%" valign="top">
+                            <b>Email</b>
+                            <a href="#" style="text-decoration:none">
+								➲
+							</a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td width="13%" valign="top">
+                            <b>Website</b>
+                            <a href="#" style="text-decoration:none">
+								➲
+							</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Footer1(end)-->
+
+
+    <!--Footer2(start)-->
+    <table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td width="80%" valign="top">
+                            <font face="Verdana" color="#4CAF50" size="5">
+                                ©Copyright 2050 by Kamlesh Seervi. All rights reserved.
+                            </font>
+                        </td>
+
+                        <td width="10%">
+                            <font face="arial" color="black" size="5">
+                                <a href="#header" style="text-decoration:none">
+                                    <font face="Verdana" color="#4CAF50" size="6">
+                                        <b>TOP</b>
+                                    </font>
+                                </a>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Footer2(end)-->
+
 </body>
+
 </html>
