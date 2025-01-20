@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,234 +8,173 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
         }
+
         header {
             background-color: #FF6F61;
-            padding: 1em 0;
+            padding: 15px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         header h1 {
             margin: 0;
-            font-family: 'Comic Sans MS', sans-serif;
-            font-size: 2.5em;
-            color: #fff;
-        }
-        nav a {
-            margin: 0 15px;
-            font-size: 1.2em;
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #333;
-        }
-        section {
-            padding: 50px 20px;
-        }
-        #home {
-            background-color: #6B5B95;
-            color: #ffffff;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        #home h2 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        #home h3 {
             font-size: 2em;
-            margin-top: 0;
-            color: #4CAF50;
+            color: white;
         }
-        #about, #achievements {
-            background-color: #fff;
-            color: #333;
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #FF6F61;
         }
-        #projects, #contact {
-            background-color: #c2c0c3;
-        }
-        h2, h3 {
-            margin: 0 0 20px;
-        }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .about-img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: black;
             font-size: 1.2em;
         }
-        .iframe-container {
-            width: 100%;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-            position: relative;
-            margin-bottom: 20px;
+
+        nav a:hover {
+            background-color: white;
+            color: #FF6F61;
         }
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
+
+        section {
+            padding: 20px;
+            text-align: center;
         }
-        .contact-form input, .contact-form textarea, .contact-form button {
+
+        #about img {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            font-size: 1em;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            max-width: 300px;
+            margin-bottom: 15px;
         }
-        .contact-form button {
-            background-color: #4CAF50;
-            color: white;
+
+        .responsive-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .responsive-grid div {
+            flex: 1 1 calc(50% - 20px);
+            box-sizing: border-box;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
             border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
         }
-        .contact-form button:hover {
-            background-color: #45a049;
-        }
+
         footer {
             background-color: #4CAF50;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-top: 20px;
         }
-        footer a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        footer a:hover {
-            color: #000;
-        }
-        .footer-links {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 20px 0;
+
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 1em;
+            }
+
+            .responsive-grid div {
+                flex: 1 1 100%;
+            }
+
+            iframe {
+                height: 150px;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Kamlesh Seervi</h1>
-        <nav>
-            <a href="#home">Home</a> |
-            <a href="#about">About</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#achievements">Achievements</a> |
-            <a href="#contact">Contact</a>
-        </nav>
     </header>
 
-    <section id="home">
-        <div class="container">
-            <h2>Hi</h2>
-            <h3>Freelance Programmer</h3>
-        </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" style="background-color: #6B5B95; color: white;">
+        <h2>Hi</h2>
+        <p>Welcome to my portfolio!</p>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <img src="kamlesh.JPG" alt="Kamlesh Seervi" class="about-img">
-            <p>Thanks for your interest, here is a quick story of me and this website. Kamlesh Seervi An IIIT Manipur Student. I do my work mainly in C, C++, JAVA, Kotlin & Flutter. Besides these I know Web Development, Android Development, LINUX, and database as well. This website is basically one of my Web Development projects which is built using HTML only. Here one can also find ideas for projects in different languages. Thanks again for reading this, because of people like you, it exists and prospers! Cheers, <b>Kamlesh Seervi</b></p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <ul>
-                <li>Food Delivery Application <a href="https://github.com/Kamleshseervi/food_delivery">➲</a></li>
-                <div class="iframe-container">
-                    <iframe src="https://github.com/Kamleshseervi/food_delivery"></iframe>
-                </div>
-                <li>Women Safety Android Application <a href="https://github.com/Kamleshseervi/Women-Safety">➲</a></li>
-                <div class="iframe-container">
-                    <iframe src="https://github.com/Kamleshseervi/Women-Safety"></iframe>
-                </div>
-            </ul>
-        </div>
-    </section>
-
-    <section id="achievements">
-        <div class="container">
-            <h2>Achievements</h2>
-            <ul>
-                <li><b>Lead at GDSC IIIT Manipur</b>
-                    <ul>
-                        <li>First one to start Google Developer Student Club in Manipur state</li>
-                        <li>Successfully Hosted 7 Sessions till now.</li>
-                    </ul>
-                </li>
-                <li><b>Research Intern at DRDO</b>
-                    <ul>
-                        <li>Worked as intern in DRDO for 2 months</li>
-                    </ul>
-                </li>
-                <li><b>Student Representative at Codechef</b>
-                    <ul>
-                        <li>September 2021 - Nov 2021</li>
-                        <li>Got a chance to work with Marketing team of Codechef</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-form">
-                <form>
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="email" name="email" placeholder="Email">
-                    <input type="text" name="number" placeholder="Number">
-                    <textarea name="message" rows="5" placeholder="Message"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
+    <section id="about" style="background-color: black; color: white;">
+        <h2>About Me</h2>
+        <hr style="width: 80px; border: 1px solid #4CAF50;">
+        <div class="responsive-grid">
+            <div>
+                <img src="kamlesh.JPG" alt="Kamlesh Seervi">
+            </div>
+            <div>
+                <p>
+                    Kamlesh Seervi, an IIIT Manipur student, specializes in C, C++, Java, Kotlin, Flutter, Web Development, and more. This website showcases some of my work and ideas for projects in different languages.
+                </p>
+                <p>Thanks for visiting!</p>
             </div>
         </div>
+    </section>
+
+    <section id="projects" style="background-color: #c2c0c3;">
+        <h2>Projects</h2>
+        <hr style="width: 80px; border: 1px solid black;">
+        <div class="responsive-grid">
+            <div>
+                <h3>Portfolio Website</h3>
+                <iframe src="https://kamleshseervi.github.io/"></iframe>
+                <p><a href="https://kamleshseervi.github.io/">View Project</a></p>
+            </div>
+            <div>
+                <h3>Women Safety App</h3>
+                <iframe src="https://github.com/Kamleshseervi/Women-Safety"></iframe>
+                <p><a href="https://github.com/Kamleshseervi/Women-Safety">View Project</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" style="background-color: black; color: white;">
+        <h2>Achievements</h2>
+        <hr style="width: 80px; border: 1px solid #4CAF50;">
+        <ul>
+            <li>Lead at GDSC IIIT Manipur</li>
+            <li>Research Intern at DRDO</li>
+            <li>Student Representative at CodeChef</li>
+        </ul>
+    </section>
+
+    <section id="contact" style="background-color: #c2c0c3;">
+        <h2>Contact</h2>
+        <hr style="width: 80px; border: 1px solid black;">
+        <form>
+            <p><input type="text" placeholder="Your Name" required></p>
+            <p><input type="email" placeholder="Your Email" required></p>
+            <p><textarea placeholder="Your Message" rows="4" required></textarea></p>
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/kamlesh2002/">LinkedIn ➲</a>
-                <a href="https://github.com/Kamleshseervi/Kamleshseervi">GitHub ➲</a>
-                <a href="https://www.hackerrank.com/kamleshaglecha21">HackerRank ➲</a>
-                <a href="https://auth.geeksforgeeks.org/user/kamleshaglecha2002/profile">GeeksforGeeks ➲</a>
-                <a href="#">Twitter ➲</a>
-                <a href="#">Instagram ➲</a>
-                <a href="https://kamleshseervi.github.io/">Website ➲</a>
-            </div>
-            <p>© Copyright 2050 by Kamlesh Seervi. All rights reserved. <a href="#header">TOP</a></p>
-        </div>
+        <p>© 2050 Kamlesh Seervi. All rights reserved.</p>
+        <p><a href="#header" style="color: white;">Back to Top</a></p>
     </footer>
 </body>
+
 </html>
